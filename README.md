@@ -13,3 +13,8 @@ These modules highlight good rspec-puppet tests.
 
 ### Types & Providers
 * [maestrodev/maven](https://github.com/maestrodev/puppet-maven) - Good examples of Types and Providers
+
+## YAML
+YAML is not unique to Puppet but may be new to some users or have some surprising Puppet-isms.
+
+* [YAML for Puppet users?](http://ask.puppetlabs.com/question/19711/yaml-for-puppet-users/) - A combination YAML primer and Guide to Puppet/YAML idiosyncracies.
