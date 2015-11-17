@@ -1,5 +1,5 @@
 # puppet-reference_modules
-A list of puppet modules that are good references for current Puppet best practices.
+A list of puppet modules (and maybe some other tools) that are good references for current Puppet best practices.
 
 ## Controlrepo
 A Control Repository is used to control the code deployed in Puppet environments
