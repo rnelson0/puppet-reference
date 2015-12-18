@@ -12,7 +12,8 @@ A Control Repository is used to control the code deployed in Puppet environments
 These modules highlight good rspec-puppet tests.
 
 ### Types & Providers
-* [maestrodev/maven](https://github.com/maestrodev/puppet-maven) - Good examples of Types and Providers
+* [puppetlabs/azure](https://github.com/puppetlabs/puppetlabs-azure)
+* [maestrodev/maven](https://github.com/maestrodev/puppet-maven)
 
 ## YAML
 YAML is not unique to Puppet but may be new to some users or have some surprising Puppet-isms.
