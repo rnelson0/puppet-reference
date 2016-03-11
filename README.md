@@ -1,21 +1,26 @@
 # puppet-reference
-A list of puppet modules, tools, and architecture that are good references for current Puppet best practices.
+A list of puppet modules, tools, testing, and architecture that are good references for current Puppet best practices.
 
-## Controlrepo
-A Control Repository is used to control the code deployed in Puppet environments
-* [puppetlabs/control-repo](https://github.com/puppetlabs/control-repo) - Official reference controlrepo template from Puppet Labs
+### Modules
 
-## Puppet Modules
+### Tools
 * [garethr/puppet-module-skeleton](https://github.com/garethr/puppet-module-skeleton) - General purpose skeleton for a new module. Includes Gemfile, Rakefile, Travis CI, Rubocop, and other settings you should use.
+* [https://github.com/voxpupuli/modulesync](Modulesync) helps synchronize consistent settings across modules in a user or organization namespace.
 
-## Testing
+### Testing
 These modules highlight good rspec-puppet tests.
 
-### Types & Providers
+#### Types & Providers
 * [puppetlabs/azure](https://github.com/puppetlabs/puppetlabs-azure)
 * [maestrodev/maven](https://github.com/maestrodev/puppet-maven)
 
-## YAML
-YAML is not unique to Puppet but may be new to some users or have some surprising Puppet-isms.
+### Architecture
+A Control Repository is used to control the code deployed in Puppet environments.
+* [puppetlabs/control-repo](https://github.com/puppetlabs/control-repo) - Official reference controlrepo template from Puppet Labs, based on [Even Besterer Practices](http://garylarizza.com/blog/2015/11/16/workflows-evolved-even-besterer-practices/).
 
+
+### Other
+* [Puppet Cookbook](http://www.puppetcookbook.com/), a collection of task oriented solutions in Puppet
 * [YAML for Puppet users?](http://ask.puppetlabs.com/question/19711/yaml-for-puppet-users/) - A combination YAML primer and Guide to Puppet/YAML idiosyncracies.
+
+
