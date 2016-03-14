@@ -16,7 +16,8 @@ These modules highlight good rspec-puppet tests.
 
 ### Architecture
 A Control Repository is used to control the code deployed in Puppet environments.
-* [puppetlabs/control-repo](https://github.com/puppetlabs/control-repo) - Official reference controlrepo template from Puppet Labs, based on [Even Besterer Practices](http://garylarizza.com/blog/2015/11/16/workflows-evolved-even-besterer-practices/).
+* [puppetlabs/control-repo](https://github.com/puppetlabs/control-repo) - Official reference architecture from Puppet Labs, based on [Even Besterer Practices](http://garylarizza.com/blog/2015/11/16/workflows-evolved-even-besterer-practices/).
+* [puppetlabs-education/classroom-control-vf](https://github.com/puppetlabs-education/classroom-control-vf) - A good reference implementation of the controlrepo, maintained by Puppet Labs's Education group.
 
 
 ### Other
