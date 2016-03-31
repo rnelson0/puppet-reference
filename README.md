@@ -14,6 +14,9 @@ These modules highlight good rspec-puppet tests.
 * [puppetlabs/azure](https://github.com/puppetlabs/puppetlabs-azure)
 * [maestrodev/maven](https://github.com/maestrodev/puppet-maven)
 
+#### Custom Facts
+* [puppetlabs/java's java_version](https://github.com/puppetlabs/puppetlabs-java/blob/master/spec/unit/facter/java_version_spec.rb)
+
 ### Architecture
 A Control Repository is used to control the code deployed in Puppet environments.
 * [puppetlabs/control-repo](https://github.com/puppetlabs/control-repo) - Official reference architecture from Puppet Labs, based on [Even Besterer Practices](http://garylarizza.com/blog/2015/11/16/workflows-evolved-even-besterer-practices/).
