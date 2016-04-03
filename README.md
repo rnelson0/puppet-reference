@@ -5,7 +5,8 @@ A list of puppet modules, tools, testing, and architecture that are good referen
 
 ### Tools
 * [garethr/puppet-module-skeleton](https://github.com/garethr/puppet-module-skeleton) - General purpose skeleton for a new module. Includes Gemfile, Rakefile, Travis CI, Rubocop, and other settings you should use.
-* [https://github.com/voxpupuli/modulesync](Modulesync) helps synchronize consistent settings across modules in a user or organization namespace.
+* [Modulesync](https://github.com/voxpupuli/modulesync) helps synchronize consistent settings across modules in a user or organization namespace.
+** [modulesync_config reference](https://github.com/rnelson0/puppet-modulesync_config_reference) is an example of a starting configuration.
 
 ### Testing
 These modules highlight good rspec-puppet tests.
