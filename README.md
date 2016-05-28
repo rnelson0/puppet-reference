@@ -19,14 +19,14 @@ These modules highlight good rspec-puppet tests.
 #### Custom Facts
 * [puppetlabs/java's java_version](https://github.com/puppetlabs/puppetlabs-java/blob/master/spec/unit/facter/java_version_spec.rb)
 
+#### Mocking an Object like `File.exists?`
+* [calling the original implementation](https://relishapp.com/rspec/rspec-mocks/docs/configuring-responses/calling-the-original-implementation)
+
 ### Architecture
 A Control Repository is used to control the code deployed in Puppet environments.
 * [puppetlabs/control-repo](https://github.com/puppetlabs/control-repo) - Official reference architecture from Puppet Labs, based on [Even Besterer Practices](http://garylarizza.com/blog/2015/11/16/workflows-evolved-even-besterer-practices/).
 * [puppetlabs-education/classroom-control-vf](https://github.com/puppetlabs-education/classroom-control-vf) - A good reference implementation of the controlrepo, maintained by Puppet Labs's Education group.
 
-
 ### Other
 * [Puppet Cookbook](http://www.puppetcookbook.com/), a collection of task oriented solutions in Puppet
 * [YAML for Puppet users?](http://ask.puppetlabs.com/question/19711/yaml-for-puppet-users/) - A combination YAML primer and Guide to Puppet/YAML idiosyncracies.
-
-
