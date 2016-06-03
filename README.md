@@ -23,9 +23,12 @@ These modules highlight good rspec-puppet tests.
 * [calling the original implementation](https://relishapp.com/rspec/rspec-mocks/docs/configuring-responses/calling-the-original-implementation)
 
 ### Architecture
-A Control Repository is used to control the code deployed in Puppet environments.
-* [puppetlabs/control-repo](https://github.com/puppetlabs/control-repo) - Official reference architecture from Puppet Labs, based on [Even Besterer Practices](http://garylarizza.com/blog/2015/11/16/workflows-evolved-even-besterer-practices/).
-* [puppetlabs-education/classroom-control-vf](https://github.com/puppetlabs-education/classroom-control-vf) - A good reference implementation of the controlrepo, maintained by Puppet Labs's Education group.
+#### Control Repositories
+A Control Repository is used to control the code deployed in Puppet environments. Puppet has two official reference repositories, and there are some public repositories that are a mix of reference architecture and practical usage. 
+* [puppetlabs/control-repo](https://github.com/puppetlabs/control-repo) - Official reference architecture from Puppet, based on [Even Besterer Practices](http://garylarizza.com/blog/2015/11/16/workflows-evolved-even-besterer-practices/).
+* [puppetlabs-education/classroom-control-vf](https://github.com/puppetlabs-education/classroom-control-vf) - A good reference implementation of the control repository, maintained by Puppet's Education group.
+* [example42/control-repo](https://github.com/example42/control-repo) - Example 42's [reference control repository](http://www.example42.com/2016/05/11/a-modern-puppet4-control-repo/).
+* [puppetinabox/controlrepo](https://github.com/puppetinabox/controlrepo) - Rob Nelson's control repository for his [PuppetInABox project](https://rnelson0.com/2015/01/08/introducing-puppetinabox-bootstrap-a-lab-setup-with-puppet/).
 
 ### Other
 * [Puppet Cookbook](http://www.puppetcookbook.com/), a collection of task oriented solutions in Puppet
