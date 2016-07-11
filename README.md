@@ -8,9 +8,14 @@ A list of puppet modules, tools, testing, and architecture that are good referen
 * [Modulesync](https://github.com/voxpupuli/modulesync) helps synchronize consistent settings across modules in a user or organization namespace.
   * [modulesync_config reference](https://github.com/rnelson0/puppet-modulesync_config_reference) is an example of a starting configuration.
 * [puppet-retrospec](https://github.com/nwops/puppet-retrospec) will help you get started with some quick and dirty rspec tests.
+* [vim-puppet](https://github.com/voxpupuli/vim-puppet) provides syntax highlighting and other plugins for editing puppet files.
+* [puppet-ghostbuster](https://github.com/camptocamp/puppet-ghostbuster) is a dead code detector. Requires puppetdb 3+.
 
 ### Testing
 These modules highlight good rspec-puppet tests.
+
+#### Beaker
+* [puppetlabs/httpd](https://github.com/puppetlabs/puppetlabs-apache/blob/master/.travis.yml)
 
 #### Types & Providers
 * [puppetlabs/azure](https://github.com/puppetlabs/puppetlabs-azure)
