@@ -36,5 +36,6 @@ A Control Repository is used to control the code deployed in Puppet environments
 * [puppetinabox/controlrepo](https://github.com/puppetinabox/controlrepo) - Rob Nelson's control repository for his [PuppetInABox project](https://rnelson0.com/2015/01/08/introducing-puppetinabox-bootstrap-a-lab-setup-with-puppet/).
 
 ### Other
+* Whirlwind Tour of Puppet 4 - [Slides](http://www.slideshare.net/ripienaar/whirlwind-tour-of-puppet-4) and [video](https://www.youtube.com/watch?v=5JDhAliu8SM)
 * [Puppet Cookbook](http://www.puppetcookbook.com/), a collection of task oriented solutions in Puppet
 * [YAML for Puppet users?](http://ask.puppetlabs.com/question/19711/yaml-for-puppet-users/) - A combination YAML primer and Guide to Puppet/YAML idiosyncracies.
