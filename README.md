@@ -12,7 +12,10 @@ A list of puppet modules, tools, testing, and architecture that are good referen
 * [puppet-ghostbuster](https://github.com/camptocamp/puppet-ghostbuster) is a dead code detector. Requires puppetdb 3+.
 
 ### Testing
-These modules highlight good rspec-puppet tests.
+
+* Introduction to Testing Puppet Modules ([slides](https://www.netways.de/fileadmin/images/Events_Trainings/Events/OSDC/2016/Slides_2016/David_Schmitt_-_Introduction_to_Testing_Puppet_Modules.pdf) and [video](https://www.youtube.com/watch?v=GgNrxLfoDF8)) by [David Schmitt](https://twitter.com/dev_el_ops)
+
+The modules below each highlight one or more aspects of rspec-puppet testing.
 
 #### Beaker
 * [puppetlabs/httpd](https://github.com/puppetlabs/puppetlabs-apache/blob/master/.travis.yml)
