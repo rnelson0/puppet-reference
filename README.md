@@ -30,6 +30,10 @@ The modules below each highlight one or more aspects of rspec-puppet testing.
 #### Mocking an Object like `File.exists?`
 * [calling the original implementation](https://relishapp.com/rspec/rspec-mocks/docs/configuring-responses/calling-the-original-implementation)
 
+#### Template Results
+Templates are often fed values by class parameters. Test for portions of the content based on the values you expect to find with various parameter settings, rather than testing the entire contents.
+* [puppetlabs/apache](https://github.com/puppetlabs/puppetlabs-apache) - httpd.conf.erb's [DefaultType setting](https://github.com/puppetlabs/puppetlabs-apache/blob/5d2e65ed3df9d39fb7d99b5948584035f8b662c3/templates/httpd.conf.erb#L50-L52) is tested [here](https://github.com/puppetlabs/puppetlabs-apache/blob/5d2e65ed3df9d39fb7d99b5948584035f8b662c3/spec/classes/apache_spec.rb#L152-L184)
+
 ### Architecture
 #### Control Repositories
 A Control Repository is used to control the code deployed in Puppet environments. Puppet has two official reference repositories, and there are some public repositories that are a mix of reference architecture and practical usage. 
