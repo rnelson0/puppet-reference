@@ -1,7 +1,9 @@
 # puppet-reference
 A list of puppet modules, tools, testing, and architecture that are good references for current Puppet best practices.
 
-### Modules
+### Puppet 4
+
+* [Puppet Tea](https://github.com/voxpupuli/puppet-tea/tree/master/types) - Custom [Defined Types](https://docs.puppet.com/puppet/latest/lang_defined_types.html) that can be used to shorten the parameter list definitions and/or when complex types are used in multiple places.
 
 ### Tools
 * [garethr/puppet-module-skeleton](https://github.com/garethr/puppet-module-skeleton) - General purpose skeleton for a new module. Includes Gemfile, Rakefile, Travis CI, Rubocop, and other settings you should use.
