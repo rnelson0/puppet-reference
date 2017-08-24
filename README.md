@@ -28,6 +28,7 @@ The modules below each highlight one or more aspects of rspec-puppet testing.
 
 #### Custom Facts
 * [puppetlabs/java's java_version](https://github.com/puppetlabs/puppetlabs-java/blob/master/spec/unit/facter/java_version_spec.rb)
+* [puppetinabox puppet_role fact](https://github.com/puppetinabox/controlrepo/blob/539b2adb474f9028c59565b40fe340a9a59f57e0/dist/profile/lib/facter/puppet_role.rb) and [test](https://github.com/puppetinabox/controlrepo/blob/539b2adb474f9028c59565b40fe340a9a59f57e0/dist/profile/spec/unit/facter/puppet_role_spec.rb) - The *puppet_role* fact is calculated on another fact's value, *hostname*, which requires resetting BOTH custom facts for every test.
 
 #### Mocking an Object like `File.exists?`
 * [calling the original implementation](https://relishapp.com/rspec/rspec-mocks/docs/configuring-responses/calling-the-original-implementation)
