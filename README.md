@@ -10,8 +10,9 @@ A list of puppet modules, tools, testing, and architecture that are good referen
 
 * [Modulesync](https://github.com/voxpupuli/modulesync) helps synchronize consistent settings across modules in a user or organization namespace.
   * [modulesync_config reference](https://github.com/rnelson0/puppet-modulesync_config_reference) is an example of a starting configuration.
-* [puppet-retrospec](https://github.com/nwops/puppet-retrospec) will help you get started with some quick and dirty rspec tests.
+* [puppet-retrospec](https://github.com/nwops/puppet-retrospec) The only tool you need to generate puppet code, tests, modules, facts, types, providers, data and everything else..
 * [puppet-ghostbuster](https://github.com/camptocamp/puppet-ghostbuster) is a dead code detector. Requires puppetdb 3+.
+* [puppet-debugger](https://github.com/nwops/puppet-debugger) A interactive live debugger and REPL for the puppet language
 
 ### Editor support
 
