@@ -35,8 +35,10 @@ The modules below each highlight one or more aspects of rspec-puppet testing.
 * [puppetlabs/httpd](https://github.com/puppetlabs/puppetlabs-apache/blob/master/.travis.yml)
 
 #### Types & Providers
-* [puppetlabs/azure](https://github.com/puppetlabs/puppetlabs-azure)
-* [maestrodev/maven](https://github.com/maestrodev/puppet-maven)
+* [Resource API](https://github.com/puppetlabs/puppet-resource_api)
+* Legacy examples:
+  * [puppetlabs/azure](https://github.com/puppetlabs/puppetlabs-azure)
+  * [maestrodev/maven](https://github.com/maestrodev/puppet-maven)
 
 #### Custom Facts
 * [puppetlabs/java's java_version](https://github.com/puppetlabs/puppetlabs-java/blob/master/spec/unit/facter/java_version_spec.rb)
