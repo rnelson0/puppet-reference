@@ -1,5 +1,5 @@
 # puppet-reference
-A list of puppet modules, tools, testing, and architecture that are good references for current Puppet best practices.
+A list of puppet modules, tools, testing, and architecture that are good reference implementations of the [current Puppet best practices](https://github.com/puppetlabs/best-practices).
 
 ### Puppet 4
 
