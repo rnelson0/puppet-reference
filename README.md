@@ -15,6 +15,7 @@ A list of puppet modules, tools, testing, and architecture that are good referen
 * [puppet-retrospec](https://github.com/nwops/puppet-retrospec) The only tool you need to generate puppet code, tests, modules, facts, types, providers, data and everything else..
 * [puppet-ghostbuster](https://github.com/camptocamp/puppet-ghostbuster) is a dead code detector. Requires puppetdb 3+.
 * [puppet-debugger](https://github.com/nwops/puppet-debugger) A interactive live debugger and REPL for the puppet language
+* [puppet-function-updater](https://github.com/binford2k/puppet-function-updater) A tool that helps port legacy Puppet functions to the modern Ruby API.
 * [puppet-strings](https://github.com/puppetlabs/puppet-strings) generates automatic documentation for properly configured modules. See [the Puppet blog](https://puppet.com/blog/using-puppet-strings-generate-great-documentation-puppet-modules) for details.
   * Puppet's [NTP module](https://github.com/puppetlabs/puppetlabs-ntp) is a recommended reference module.
 
