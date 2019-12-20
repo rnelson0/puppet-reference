@@ -1,52 +1,6 @@
 # puppet-reference
 A list of puppet modules, tools, testing, and architecture that are good reference implementations of the [current Puppet best practices](https://github.com/puppetlabs/best-practices).
 
-### Puppet 4
-
-* [Puppet Tea](https://github.com/voxpupuli/puppet-tea/tree/master/types) - Custom [Defined Types](https://docs.puppet.com/puppet/latest/lang_defined_types.html) that can be used to shorten the parameter list definitions and/or when complex types are used in multiple places.
-
-### Tools
-* [Puppet Development Kit](https://puppet.com/download-puppet-development-kit) - All-in-one CLI for writing and testing puppet modules ([docs](https://docs.puppet.com/pdk/latest/index.html), [announcement](https://puppet.com/blog/develop-modules-faster-new-puppet-development-kit), [github](https://github.com/puppetlabs/pdk)); provides Gemfile, Rakefile, Travis CI, Rubocop, and other settings you should use.
-
-* [Modulesync](https://github.com/voxpupuli/modulesync) helps synchronize consistent settings across modules in a user or organization namespace.
-  * [modulesync_config reference](https://github.com/rnelson0/puppet-modulesync_config_reference) is an example of a starting configuration.
-* [pdksync](https://github.com/puppetlabs/pdksync) uses the PDK to keep multiple module repositories synchronized with consistent settings and templates.
-  * [Migrating from modulesync to pdksync](https://github.com/puppetlabs/pdksync#migrating-from-modulesync-to-pdksync).
-* [puppet-retrospec](https://github.com/nwops/puppet-retrospec) The only tool you need to generate puppet code, tests, modules, facts, types, providers, data and everything else..
-* [puppet-ghostbuster](https://github.com/camptocamp/puppet-ghostbuster) is a dead code detector. Requires puppetdb 3+.
-* [puppet-debugger](https://github.com/nwops/puppet-debugger) A interactive live debugger and REPL for the puppet language
-* [puppet-function-updater](https://github.com/binford2k/puppet-function-updater) A tool that helps port legacy Puppet functions to the modern Ruby API.
-* [puppet-strings](https://github.com/puppetlabs/puppet-strings) generates automatic documentation for properly configured modules. See [the Puppet blog](https://puppet.com/blog/using-puppet-strings-generate-great-documentation-puppet-modules) for details.
-  * Puppet's [NTP module](https://github.com/puppetlabs/puppetlabs-ntp) is a recommended reference module.
-
-### Editor support
-
-* [VSCode Plugin](https://marketplace.visualstudio.com/items?itemName=jpogran.puppet-vscode): syntax highlighting, code snippets, linting, IntelliSense (using your deployed modules), validation, import from `puppet resource`, node graph view, PDK integration ([blog](https://puppet.com/blog/announcing-puppet-visual-studio-code), [VSCode](https://code.visualstudio.com/download))
-* [JetBrain's RubyMine](https://www.jetbrains.com/help/ruby/puppet.html): style guide, syntax and error highlighting, some refactoring support, code completion, structure view [download](https://www.jetbrains.com/ruby/download/)
-* [vim-puppet](https://github.com/voxpupuli/vim-puppet): provides syntax highlighting and other plugins for editing puppet files.
-* [Atom](https://atom.io/): [syntax highlighting](https://atom.io/packages/language-puppet), [linting](https://atom.io/packages/linter-puppet-lint)
-
-### Testing
-
-* Introduction to Testing Puppet Modules ([slides](https://www.netways.de/fileadmin/images/Events_Trainings/Events/OSDC/2016/Slides_2016/David_Schmitt_-_Introduction_to_Testing_Puppet_Modules.pdf) and [video](https://www.youtube.com/watch?v=GgNrxLfoDF8)) by [David Schmitt](https://twitter.com/dev_el_ops)
-
-* Main [rspec-puppet docs site](http://rspec-puppet.com)
-
-The modules below each highlight one or more aspects of rspec-puppet testing.
-
-#### Beaker
-* [puppetlabs/httpd](https://github.com/puppetlabs/puppetlabs-apache/blob/master/.travis.yml)
-
-#### Types & Providers
-* [Resource API](https://github.com/puppetlabs/puppet-resource_api)
-* Legacy examples:
-  * [puppetlabs/azure](https://github.com/puppetlabs/puppetlabs-azure)
-  * [maestrodev/maven](https://github.com/maestrodev/puppet-maven)
-
-#### Custom Facts
-* [puppetlabs/java's java_version](https://github.com/puppetlabs/puppetlabs-java/blob/master/spec/unit/facter/java_version_spec.rb)
-* [puppetinabox puppet_role fact](https://github.com/puppetinabox/controlrepo/blob/539b2adb474f9028c59565b40fe340a9a59f57e0/dist/profile/lib/facter/puppet_role.rb) and [test](https://github.com/puppetinabox/controlrepo/blob/539b2adb474f9028c59565b40fe340a9a59f57e0/dist/profile/spec/unit/facter/puppet_role_spec.rb) - The *puppet_role* fact is calculated on another fact's value, *hostname*, which requires resetting BOTH custom facts for every test.
-
 #### Mocking an Object like `File.exists?`
 * [calling the original implementation](https://relishapp.com/rspec/rspec-mocks/docs/configuring-responses/calling-the-original-implementation)
 
@@ -114,21 +68,6 @@ describe 'profile::sqlserver' do
 end
 
 ```
-
-#### Including dependent classes
-* [puppetlabs/apache's defined type apache::vhost](https://github.com/puppetlabs/puppetlabs-apache/blob/5d2e65ed3df9d39fb7d99b5948584035f8b662c3/spec/defines/vhost_spec.rb#L4-L6) requires the class `apache` to be included as well, via `let :pre_condition do .. end`
-
-#### Template Results
-Templates are often fed values by class parameters. Test for portions of the content based on the values you expect to find with various parameter settings, rather than testing the entire contents.
-* [puppetlabs/apache](https://github.com/puppetlabs/puppetlabs-apache) - httpd.conf.erb's [DefaultType setting](https://github.com/puppetlabs/puppetlabs-apache/blob/5d2e65ed3df9d39fb7d99b5948584035f8b662c3/templates/httpd.conf.erb#L50-L52) is tested [here](https://github.com/puppetlabs/puppetlabs-apache/blob/5d2e65ed3df9d39fb7d99b5948584035f8b662c3/spec/classes/apache_spec.rb#L152-L184)
-
-### Architecture
-#### Control Repositories
-A Control Repository is used to control the code deployed in Puppet environments. Puppet has two official reference repositories, and there are some public repositories that are a mix of reference architecture and practical usage. 
-* [puppetlabs/control-repo](https://github.com/puppetlabs/control-repo) - Official reference architecture from Puppet, based on [Even Besterer Practices](http://garylarizza.com/blog/2015/11/16/workflows-evolved-even-besterer-practices/).
-* [puppetlabs-education/classroom-control-vf](https://github.com/puppetlabs-education/classroom-control-vf) - A good reference implementation of the control repository, maintained by Puppet's Education group.
-* [example42/control-repo](https://github.com/example42/control-repo) - Example 42's [reference control repository](http://www.example42.com/2016/05/11/a-modern-puppet4-control-repo/).
-* [puppetinabox/controlrepo](https://github.com/puppetinabox/controlrepo) - Rob Nelson's control repository for his [PuppetInABox project](https://rnelson0.com/2015/01/08/introducing-puppetinabox-bootstrap-a-lab-setup-with-puppet/).
 
 ### Other
 * Whirlwind Tour of Puppet 4 - [Slides](http://www.slideshare.net/ripienaar/whirlwind-tour-of-puppet-4) and [video](https://www.youtube.com/watch?v=5JDhAliu8SM)
