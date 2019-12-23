@@ -1,3 +1,5 @@
+This project has been merged into and replaced by [awesome-puppet](https://github.com/rnelson0/awesome-puppet). The contents below are data that did not fit into the format of awesome-puppet or is outdated, but is left for archival purposes.
+
 # puppet-reference
 A list of puppet modules, tools, testing, and architecture that are good reference implementations of the [current Puppet best practices](https://github.com/puppetlabs/best-practices).
 
